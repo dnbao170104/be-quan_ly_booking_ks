@@ -13,7 +13,7 @@ const pool = mysql.createPool({
   connectionLimit: 10, // Giới hạn số lượng kết nối tối đa cùng lúc
   queueLimit: 0,
   ssl: {
-    rejectUnauthorized: true, // Hoặc false tùy cấu hình chứng chỉ, nhưng bắt buộc phải có object ssl này
+    rejectUnauthorized: false, // Hoặc false tùy cấu hình chứng chỉ, nhưng bắt buộc phải có object ssl này
   }, // Số lượng yêu cầu kết nối chờ tối đa (0 là không giới hạn)
 });
 
